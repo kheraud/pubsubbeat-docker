@@ -1,7 +1,7 @@
 FROM alpine:latest
 MAINTAINER Karim Heraud <kheraud@gmail.com>
 
-ARG PUBSUBBEAT_VERSION
+ARG PUBSUBBEAT_VERSION=1.1.0
 
 RUN apk add --no-cache ca-certificates libc6-compat
 
