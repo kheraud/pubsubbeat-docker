@@ -23,7 +23,7 @@ docker build \
 ```
 
 ## Usage ##
-A pubsubbeat configuration file is expected at `/usr/share/pubsubbeat/pubsubbeat.yml`. See [original repository](https://github.com/GoogleCloudPlatform/pubsubbeat) for configuration options.
+A pubsubbeat configuration file is expected at `/usr/share/pubsubbeat/pubsubbeat.yml`. See [original repository](https://github.com/GoogleCloudPlatform/pubsubbeat) for configuration : `pubsubbeat.reference.yml`.
 
 You will also need to configure a google service account to access your target pubsub topic. It is adviced to put this file in `/usr/share/pubsubbeat/` directory also.
 
@@ -34,7 +34,7 @@ docker run kheraud/pubsubbeat \
 ```
 
 ### Non-root ###
-The container is prepared to be used with a non-root user called `pubsubuser`. At launch, container automatically switch to this user thansk to [su exec](https://github.com/ncopa/su-exec).
+The container is prepared to be used with a non-root user called `pubsubuser`. At launch, container automatically switch to this user thanks to [su exec](https://github.com/ncopa/su-exec).
 
 ## Contribution policy ##
 
